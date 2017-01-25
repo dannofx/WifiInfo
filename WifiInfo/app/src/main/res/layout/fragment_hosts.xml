@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left|top"
+    android:id="@+id/scanner_layout"
+    android:background="@color/dark_grey"
+    tools:context="org.mistercyb.wifiinfo.DiscoverDevicesFragment"
+    tools:ignore="Overdraw">
+
+    <RelativeLayout
+        android:id="@+id/progress_bar_container"
+        android:layout_height="36dp"
+        android:layout_width="match_parent"
+        android:background="@color/light_grey" >
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:id="@+id/progressBar"
+            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:rcBackgroundPadding="0dp"
+            app:rcRadius="0dp"
+            app:rcProgressColor="@color/green"
+            app:rcBackgroundColor="@color/grey"/>
+    </RelativeLayout>
+
+    <TextView android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/no_hosts_detected"
+        style="@style/NormalTextLight"/>
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/mid_grey"
+        android:dividerHeight="0.5dp" >
+    </ListView>
+
+</LinearLayout>

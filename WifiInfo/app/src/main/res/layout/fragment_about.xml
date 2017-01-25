@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left|top"
+    android:id="@+id/scanner_layout"
+    android:background="@color/dark_grey"
+    tools:context="org.mistercyb.wifiinfo.AboutFragment"
+    tools:ignore="Overdraw">
+
+    <ImageView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/light_grey"
+        android:id="@+id/header_image"
+        android:src="@drawable/wifiactive1_icon"
+        android:contentDescription="@string/logo_description"
+        android:layout_marginTop="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp" >
+    </ImageView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal" >
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:id="@+id/info_container" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_repo_label"
+                android:id="@+id/repo_label"
+                android:layout_alignParentTop="true"
+                android:paddingTop="20dp"
+                style="@style/InfoTagsDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_repo"
+                android:clickable="true"
+                android:textIsSelectable="true"
+                android:autoLink="web"
+                android:id="@+id/repo"
+                android:textColorLink="@color/semilight_grey"
+                android:layout_below="@+id/repo_label"
+                android:paddingTop="4dp"
+                style="@style/InfoTagLight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/third_party_label"
+                android:paddingTop="25dp"
+                android:id="@+id/tparty_label"
+                android:layout_below="@+id/repo"
+                style="@style/InfoTagsDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thirdparties"
+                android:clickable="true"
+                android:textIsSelectable="true"
+                android:autoLink="web"
+                android:id="@+id/tparty"
+                android:textColorLink="@color/semilight_grey"
+                android:layout_below="@+id/tparty_label"
+                android:paddingTop="4dp"
+                style="@style/InfoTagLight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/copyright_label"
+                android:paddingTop="25dp"
+                android:id="@+id/copyright_label"
+                android:layout_below="@+id/tparty"
+                style="@style/InfoTagsDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/copyright"
+                android:clickable="true"
+                android:textIsSelectable="true"
+                android:autoLink="web"
+                android:id="@+id/copyright"
+                android:textColorLink="@color/semilight_grey"
+                android:layout_below="@+id/copyright_label"
+                android:paddingTop="4dp"
+                style="@style/InfoTagLight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/license_label"
+                android:paddingTop="25dp"
+                android:id="@+id/license_label"
+                android:layout_below="@+id/copyright"
+                style="@style/InfoTagsDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/license"
+                android:clickable="true"
+                android:textIsSelectable="true"
+                android:autoLink="web"
+                android:id="@+id/license"
+                android:textColorLink="@color/semilight_grey"
+                android:layout_below="@+id/license_label"
+                android:paddingTop="4dp"
+                android:paddingBottom="20dp"
+                style="@style/InfoTagLight"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

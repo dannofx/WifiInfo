@@ -1,0 +1,233 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/dark_grey"
+    tools:context="org.mistercyb.wifiinfo.CurrentConnectionFragment" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/network_name"
+        android:id="@+id/title_label"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        style="@style/InfoTagsDark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_item_connection"
+        android:id="@+id/ssid"
+        android:layout_below="@+id/title_label"
+        android:layout_alignParentStart="true"
+        style="@style/InfoTitle"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/divider"
+        android:background="@color/mid_grey"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/ssid" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_scrollview"
+        android:layout_below="@+id/divider"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/info_container" >
+
+            <Space android:id="@+id/dummy"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ip_address"
+                android:id="@+id/address_label"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/dummy"
+                android:layout_marginRight="20dp"
+                style="@style/InfoTagsDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hardware"
+                android:id="@+id/hardware_label"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/dummy"
+                android:layout_marginLeft="20dp"
+                style="@style/InfoTagsDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/address"
+                android:layout_below="@+id/address_label"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/dummy"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="20dp"
+                style="@style/InfoTagLight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/hardware"
+                android:layout_below="@+id/address_label"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/dummy"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                style="@style/InfoTagLight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gateway"
+                android:id="@+id/gateway_label"
+                android:layout_below="@+id/address"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/dummy"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                style="@style/InfoTagsDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/netmask"
+                android:id="@+id/netmask_label"
+                android:layout_below="@+id/hardware"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/dummy"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                style="@style/InfoTagsDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/gateway"
+                android:layout_below="@+id/gateway_label"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/dummy"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="20dp"
+                style="@style/InfoTagLight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/netmask"
+                android:layout_below="@+id/netmask_label"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/dummy"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                style="@style/InfoTagLight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dns"
+                android:id="@+id/dns_label"
+                android:layout_below="@+id/gateway"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/dummy"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                style="@style/InfoTagsDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/linkspeed"
+                android:id="@+id/linkspeed_label"
+                android:layout_below="@+id/netmask"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/dummy"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                style="@style/InfoTagsDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/dns"
+                android:layout_below="@+id/dns_label"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/dummy"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="20dp"
+                style="@style/InfoTagLight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/linkspeed"
+                android:layout_below="@+id/linkspeed_label"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/dummy"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                style="@style/InfoTagLight"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Space android:id="@+id/dummyout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/copy_to_clipboard"
+        android:drawableLeft="@drawable/copy_icon"
+        android:id="@+id/copy_button"
+        android:textAllCaps="false"
+        android:background="@null"
+        android:stateListAnimator="@null"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical|left"
+        android:minWidth="65dp"
+        android:minHeight="30dp"
+        android:layout_below="@+id/dialog_scrollview"
+        android:layout_alignStart="@+id/dummyout"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="40dp"
+        style="@style/InfoTagLight" />
+
+</RelativeLayout>

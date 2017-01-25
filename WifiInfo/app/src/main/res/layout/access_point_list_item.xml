@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="15dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wifi_indicator"
+        android:src="@drawable/wifiactive3_icon"
+        android:contentDescription="@string/intensity_icon_description"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_red_check"
+        android:id="@+id/check_indicator"
+        android:paddingRight="2dp"
+        android:paddingLeft="0dp"
+        android:contentDescription="@string/network_check_description"
+        android:layout_alignBottom="@+id/wifi_indicator"
+        android:layout_alignEnd="@+id/wifi_indicator" />
+
+    <TextView
+        android:id="@+id/apName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/wifi_indicator"
+        style="@style/ItemTitle"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/apAddress"
+        android:text="@string/mac_host_label"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/apName"
+        android:layout_below="@+id/apName"
+        style="@style/NormalTextLight" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/general_info"
+        android:paddingBottom="10dp"
+        android:layout_alignStart="@id/apName"
+        android:layout_below="@+id/apAddress"
+        style="@style/NormalTextLight" />
+    
+    <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+        android:id="@+id/intensity_bar"
+        android:layout_height="20dp"
+        android:layout_width="match_parent"
+        app:rcBackgroundPadding="0dp"
+        app:rcRadius="0dp"
+        app:rcProgressColor="@color/green"
+        app:rcBackgroundColor="@color/grey"
+        android:layout_alignStart="@id/apName"
+        android:layout_below="@+id/general_info"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/f5ghz_indicator"
+        android:src="@drawable/fast_network"
+        android:contentDescription="@string/f5ghz_description"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

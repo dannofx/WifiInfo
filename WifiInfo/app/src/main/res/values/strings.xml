@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">WifiInfo</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_header_title">More Options</string>
+    <string name="menu_item_scan">Network Scan</string>
+    <string name="menu_item_host">Hosts Scan</string>
+    <string name="menu_item_connection">Current Connection</string>
+    <string name="menu_item_about">About this App</string>
+    <string name="no_results">No Results</string>
+    <string name="ip_host_label">IP - %s</string>
+    <string name="mac_host_label">HW - %s</string>
+    <string name="no_hosts_detected">No hosts detected</string>
+    <string name="linkspeed_format">%d Mbps</string>
+    <string name="license">Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n
+
+3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\n
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</string>
+    <string name="thirdparties">CustomGauge:\nhttps://github.com/pkleczko/CustomGauge\nRoundCornerProgressBar:\nhttps://github.com/akexorcist/Android-RoundCornerProgressBar</string>
+    <string name="not_connected">Not connected</string>
+    <string name="connected_to">"Connected to "</string>
+    <string name="not_network_connected">No connected to any network</string>
+    <string name="scan_unavailable">Scan is not available</string>
+    <string name="loading_results">Loading results…</string>
+    <string name="results_not_available">Results not available</string>
+    <string name="cancel">Cancel</string>
+    <string name="refresh">Refresh</string>
+    <string name="copy_to_clipboard">Copy to clipboard</string>
+    <string name="linkspeed">Linkspeed</string>
+    <string name="dns">DNS</string>
+    <string name="netmask">Netmask</string>
+    <string name="gateway">Gateway</string>
+    <string name="hardware">Hardware</string>
+    <string name="ip_address">IP Address</string>
+    <string name="license_label">License</string>
+    <string name="copyright">© 2016 Daniel Heredia. All rights reserved.</string>
+    <string name="copyright_label">Copyright</string>
+    <string name="third_party_label">Third-party components</string>
+    <string name="my_repo">https://github.com/dannofx/wifiinfo</string>
+    <string name="my_repo_label">Github repository</string>
+    <string name="logo_description">Application\'s logo</string>
+    <string name="host_description">Host indicator</string>
+    <string name="f5ghz_description">If appears, indicates if it\'s a 5GHz network.</string>
+    <string name="network_check_description">Indicates if the user is connected to this network.</string>
+    <string name="intensity_icon_description">Indicates the signal intensity of the network</string>
+    <string name="subitem_description">Indicates that it\'s a sub item.</string>
+    <string name="expansor_description">Indicates that the item has sub items.</string>
+    <string name="access_points">Access points</string>
+    <string name="passpoint">Passpoint</string>
+    <string name="intensity_label">Intensity</string>
+    <string name="channel_width_label">Channel width</string>
+    <string name="frequency_label">Frequency</string>
+    <string name="channel_label">Channel</string>
+    <string name="hardware_label">Hardware</string>
+    <string name="share_label">Share</string>
+    <string name="copy_label">Copy</string>
+    <string name="connect_label">Connect</string>
+    <string name="network_name">Network name</string>
+    <string name="dbm">%d dBm</string>
+    <string name="mhz">%d MHz</string>
+    <string name="host_info">Host Information</string>
+    <string name="close">Close</string>
+    <string name="copy">Copy</string>
+    <string name="info_copied">Host info copied</string>
+    <string name="current_conn_info_copied">Current connection info copied</string>
+    <string name="current_connection">Current connection</string>
+    <string name="network_copy">"Network: "</string>
+    <string name="ip_copy">"IP: "</string>
+    <string name="hardware_copy">"Hardware: "</string>
+    <string name="gateway_copy">"Gateway: "</string>
+    <string name="netmask_copy">"Netmask: "</string>
+    <string name="dns_copy">"DNS: "</string>
+    <string name="linkspeed_copy">"Linkspeed: "</string>
+    <string name="hostname_copy">"Hostname: "</string>
+    <string name="unknown">Unknown</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="not_available">Not available</string>
+    <string name="hidden_access_point">Hidden access point</string>
+    <string name="access_point">Access point</string>
+    <string name="share">Share</string>
+    <string name="wifi_access_point">Wifi access point</string>
+    <string name="ap_copied">Access point info copied</string>
+    <string name="passpoint_copy">"Passpoint: "</string>
+    <string name="channel_width_copy">"Channel width: "</string>
+    <string name="channel_copy">"Channel: "</string>
+    <string name="dbm_copy">dBm\n</string>
+    <string name="intensity_copy">"Intensity: "</string>
+    <string name="mhz_copy">MHz</string>
+    <string name="frequency_copy">"Frequency: "</string>
+    <string name="bssid_copy">"BSSID: "</string>
+    <string name="ssid_copy">"SSID: "</string>
+</resources>

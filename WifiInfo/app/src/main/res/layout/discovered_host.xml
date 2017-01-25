@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/host_indicator"
+        android:src="@drawable/hostactive_icon"
+        android:contentDescription="@string/host_description"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/hostname"
+        android:text="@string/network_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/host_indicator"
+        style="@style/ItemTitle" />
+
+    <TextView
+        android:id="@+id/mac_address"
+        android:text="@string/mac_host_label"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/hostname"
+        android:layout_below="@+id/hostname"
+        style="@style/NormalTextLight" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ip_host_label"
+        android:id="@+id/ip_address"
+        android:layout_alignStart="@id/hostname"
+        android:layout_below="@+id/mac_address"
+        style="@style/NormalTextLight" />
+
+</RelativeLayout>
