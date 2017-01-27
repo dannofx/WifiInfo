@@ -3,8 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="left|top"
-    android:id="@+id/scanner_layout"
+    android:layout_gravity="start|top"
     android:background="@color/dark_grey"
     tools:context="org.mistercyb.wifiinfo.ScannerFragment"
     tools:ignore="Overdraw">
@@ -13,9 +12,8 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="left|top"
+        android:layout_gravity="start|top"
         android:background="@color/light_grey"
-        android:id="@+id/header_layout"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:paddingLeft="12dp"
@@ -25,8 +23,7 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="left|top"
-            android:id="@+id/current_connection_layout"
+            android:layout_gravity="start|top"
             android:paddingBottom="3dp">
             <TextView
                 android:layout_width="wrap_content"

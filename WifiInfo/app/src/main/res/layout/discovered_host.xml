@@ -15,7 +15,7 @@
         android:src="@drawable/hostactive_icon"
         android:contentDescription="@string/host_description"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/hostname"
@@ -23,8 +23,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="5dp"
-        android:layout_marginLeft="15dp"
-        android:layout_toRightOf="@id/host_indicator"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@id/host_indicator"
         style="@style/ItemTitle" />
 
     <TextView

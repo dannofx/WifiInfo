@@ -16,15 +16,15 @@
         android:src="@drawable/wifiactive3_icon"
         android:contentDescription="@string/intensity_icon_description"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/icon_red_check"
         android:id="@+id/check_indicator"
-        android:paddingRight="2dp"
-        android:paddingLeft="0dp"
+        android:paddingEnd="2dp"
+        android:paddingStart="0dp"
         android:contentDescription="@string/network_check_description"
         android:layout_alignBottom="@+id/wifi_indicator"
         android:layout_alignEnd="@+id/wifi_indicator" />
@@ -34,8 +34,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="5dp"
-        android:layout_marginLeft="15dp"
-        android:layout_toRightOf="@id/wifi_indicator"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@id/wifi_indicator"
         style="@style/ItemTitle"
         tools:ignore="RelativeOverlap" />
 
@@ -55,7 +55,7 @@
         android:id="@+id/f5ghz_indicator"
         android:src="@drawable/fast_network"
         android:contentDescription="@string/f5ghz_description"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true" />
 
     <ImageView
@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/icon_more"
         android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:contentDescription="@string/expansor_description" />
 
 </RelativeLayout>

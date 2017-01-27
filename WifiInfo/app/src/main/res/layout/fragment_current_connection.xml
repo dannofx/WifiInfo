@@ -47,8 +47,7 @@
         <RelativeLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/info_container" >
+            android:layout_height="wrap_content">
 
             <Space android:id="@+id/dummy"
                 android:layout_width="0dp"
@@ -65,18 +64,17 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
                 android:layout_alignEnd="@+id/dummy"
-                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
                 style="@style/InfoTagsDark"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/hardware"
-                android:id="@+id/hardware_label"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignStart="@+id/dummy"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 style="@style/InfoTagsDark"/>
 
             <TextView
@@ -88,7 +86,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignEnd="@+id/dummy"
                 android:layout_marginTop="4dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
                 style="@style/InfoTagLight"/>
 
             <TextView
@@ -100,7 +98,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignStart="@+id/dummy"
                 android:layout_marginTop="4dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 style="@style/InfoTagLight"/>
 
             <TextView
@@ -112,7 +110,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignEnd="@+id/dummy"
                 android:layout_marginTop="8dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
                 style="@style/InfoTagsDark"/>
 
             <TextView
@@ -124,7 +122,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignStart="@+id/dummy"
                 android:layout_marginTop="8dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 style="@style/InfoTagsDark"/>
 
             <TextView
@@ -136,7 +134,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignEnd="@+id/dummy"
                 android:layout_marginTop="4dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
                 style="@style/InfoTagLight"/>
 
             <TextView
@@ -148,7 +146,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignStart="@+id/dummy"
                 android:layout_marginTop="4dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 style="@style/InfoTagLight"/>
 
             <TextView
@@ -160,7 +158,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignEnd="@+id/dummy"
                 android:layout_marginTop="8dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
                 style="@style/InfoTagsDark"/>
 
             <TextView
@@ -172,7 +170,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignStart="@+id/dummy"
                 android:layout_marginTop="8dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 style="@style/InfoTagsDark"/>
 
             <TextView
@@ -184,7 +182,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignEnd="@+id/dummy"
                 android:layout_marginTop="4dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
                 style="@style/InfoTagLight"/>
 
             <TextView
@@ -196,7 +194,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignStart="@+id/dummy"
                 android:layout_marginTop="4dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 style="@style/InfoTagLight"/>
 
 
@@ -215,18 +213,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/copy_to_clipboard"
-        android:drawableLeft="@drawable/copy_icon"
+        android:drawableStart="@drawable/copy_icon"
         android:id="@+id/copy_button"
         android:textAllCaps="false"
         android:background="@null"
         android:stateListAnimator="@null"
         android:drawablePadding="5dp"
-        android:gravity="center_vertical|left"
+        android:gravity="center_vertical|start"
         android:minWidth="65dp"
         android:minHeight="30dp"
         android:layout_below="@+id/dialog_scrollview"
         android:layout_alignStart="@+id/dummyout"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:paddingTop="40dp"
         style="@style/InfoTagLight" />
 
