@@ -237,9 +237,9 @@ public class ScannerFragment extends Fragment implements WifiEventReceiver {
         if (currentBSSID != null) {
             currentConnectionLabel.setText(R.string.connected_to);
             currentConnection.setText(currentSSID);
-            String currentHWText = String.format(Locale.US, "HW - %s", currentBSSID);
+            String currentHWText = String.format(Locale.US, getString(R.string.HW_placeholder), currentBSSID);
             currentHW.setText(currentHWText);
-            String currentIPText = String.format(Locale.US, "IP - %s", currentIPString);
+            String currentIPText = String.format(Locale.US, getString(R.string.ip_placeholder), currentIPString);
             currentIP.setText(currentIPText);
         }
         else {
@@ -503,7 +503,7 @@ public class ScannerFragment extends Fragment implements WifiEventReceiver {
             // SSID
             String name = scanResult.SSID;
             if (name.equals(""))
-                name = "(SSID hidden)";
+                name = getString(R.string.ssid_hidden);
 
             nameView.setText(name);
 

@@ -96,4 +96,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
     <string name="frequency_copy">"Frequency: "</string>
     <string name="bssid_copy">"BSSID: "</string>
     <string name="ssid_copy">"SSID: "</string>
+    <string name="ssid_hidden">(SSID hidden)</string>
+    <string name="HW_placeholder">HW - %s</string>
+    <string name="ip_placeholder">IP - %s</string>
 </resources>
