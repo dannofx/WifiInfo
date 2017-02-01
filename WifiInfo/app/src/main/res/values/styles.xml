@@ -3,7 +3,7 @@
 <resources>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/mid_grey</item>
+        <item name="colorPrimary">@color/mid_blue</item>
         <item name="colorPrimaryDark">@color/dark_blue</item>
         <item name="colorAccent">@color/mid_blue</item>
         <item name="android:windowTranslucentStatus">true</item>
