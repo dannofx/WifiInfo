@@ -1,7 +1,10 @@
 package org.mistercyb.wifiinfo;
 
 
+import android.app.ActivityManager;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -13,6 +16,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.TypedValue;
 import android.view.MenuItem;
 import android.widget.TextView;
 
@@ -63,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        this.updateTaskDescription();
 
         if (savedInstanceState != null)
         {
@@ -150,13 +156,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed()
-    {
+    public void onBackPressed() {
         if (this.mDrawer.isDrawerOpen(GravityCompat.START)) {
             this.mDrawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
         }
+    }
+
+    private void updateTaskDescription() {
+        Bitmap taskIcon = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_activity);
+        TypedValue typedValue = new TypedValue();
+        getTheme().resolveAttribute(R.attr.colorPrimary, typedValue, true);
+        int color = typedValue.data;
+        String title = getString(R.string.app_name);
+
+        this.setTaskDescription(new ActivityManager.TaskDescription(title, taskIcon, color));
     }
 
     private ActionBarDrawerToggle setupDrawerToggle() {
