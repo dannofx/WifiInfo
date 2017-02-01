@@ -1,6 +1,6 @@
 # WifiInfo #
 
-WifiInfo shows you a detailed description of the Wi-Fi connections around you (including hidden networks), besides an scanner to detect other devices in your network and some other features.
+WifiInfo shows a detailed description of the Wi-Fi connections around you (including hidden networks), besides an scanner to detect other devices in your network and some other features.
 
 ## Screenshots
 
