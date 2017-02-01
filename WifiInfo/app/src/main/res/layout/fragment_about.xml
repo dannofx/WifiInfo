@@ -17,8 +17,8 @@
         android:src="@mipmap/ic_launcher"
         android:contentDescription="@string/logo_description"
         android:layout_marginTop="20dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp" >
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp" >
     </ImageView>
 
 
