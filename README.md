@@ -9,4 +9,4 @@ WifiInfo shows you a detailed description of the Wi-Fi connections around you (i
 ___
 You can also get it on Google Play:
 
-<a href='https://play.google.com/'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="200px"/></a>
+<a href='https://play.google.com/store/apps/details?id=org.mistercyb.wifiinfo'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="200px"/></a>
