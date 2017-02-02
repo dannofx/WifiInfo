@@ -99,4 +99,5 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
     <string name="ssid_hidden">(SSID hidden)</string>
     <string name="HW_placeholder">HW - %s</string>
     <string name="ip_placeholder">IP - %s</string>
+    <string name="location_is_off">Location is off, please turn it on \nin order to get scan results.</string>
 </resources>

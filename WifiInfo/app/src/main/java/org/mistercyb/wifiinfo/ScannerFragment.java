@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.location.LocationManager;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiManager;
 import android.support.v4.app.Fragment;
@@ -302,6 +303,17 @@ public class ScannerFragment extends Fragment implements WifiEventReceiver {
         this.listAdapter.notifyDataSetChanged();
     }
 
+    private boolean isGPSEnabled() {
+
+        LocationManager lm = (LocationManager)fActivity.getSystemService(Context.LOCATION_SERVICE);
+        boolean enabled = false;
+        try {
+            enabled = lm.isProviderEnabled(LocationManager.GPS_PROVIDER);
+        } catch(Exception ignored) {}
+
+        return enabled;
+    }
+
     private class WifiScanReceiver extends BroadcastReceiver {
 
         public void onReceive(Context c, Intent intent) {
@@ -393,7 +405,13 @@ public class ScannerFragment extends Fragment implements WifiEventReceiver {
 
             if (scanResults.size() == 0)
             {
-                emptyListView.setText(R.string.results_not_available);
+
+                boolean gps_enabled = isGPSEnabled();
+                if (gps_enabled) {
+                    emptyListView.setText(R.string.results_not_available);
+                } else {
+                    emptyListView.setText(R.string.location_is_off);
+                }
                 return;
             }
 
